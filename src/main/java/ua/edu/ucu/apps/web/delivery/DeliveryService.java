@@ -8,6 +8,6 @@ import java.util.List;
 @Service
 public class DeliveryService {
     public String deliver(List<Item> items, Delivery delivery){
-        return delivery.deliver(items);
+        return delivery.successfulDeliveryDescription(items);
     }
 }

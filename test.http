@@ -9,3 +9,24 @@ Content-Type: application/json
   "color": "blue",
   "price": 100
 }
+
+###
+GET http://localhost:8080/users/get-users
+
+###
+POST http://localhost:8080/users/post-user
+Content-Type: application/json
+
+{
+  "email": "testmail@test.com",
+  "dob": "2019-02-05"
+}
+
+###
+POST http://localhost:8080/users/post-user
+Content-Type: application/json
+
+{
+  "email": "test2mail@test.com",
+  "dob": "2017-02-05"
+}

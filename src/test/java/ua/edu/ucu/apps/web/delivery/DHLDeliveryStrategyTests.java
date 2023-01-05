@@ -15,6 +15,6 @@ public class DHLDeliveryStrategyTests {
 
     @Test
     public void testDHL(){
-        Assertions.assertEquals("Successful delivery start with DHL! Items being delivered : FlowerBucket{}, FlowerBucket{},(in paper), ", testDelivery.deliver(testItems));
+        Assertions.assertEquals("Successful delivery start with DHL! Items being delivered : FlowerBucket{}, FlowerBucket{},(in paper), ", testDelivery.successfulDeliveryDescription(testItems));
     }
 }

@@ -15,6 +15,6 @@ public class PostDeliveryStrategyTests {
 
     @Test
     public void testPost(){
-        Assertions.assertEquals("Successful delivery start with Post! Items being delivered : FlowerBucket{}, FlowerBucket{},(in paper), ", testDelivery.deliver(testItems));
+        Assertions.assertEquals("Successful delivery start with Post! Items being delivered : FlowerBucket{}, FlowerBucket{},(in paper), ", testDelivery.successfulDeliveryDescription(testItems));
     }
 }
