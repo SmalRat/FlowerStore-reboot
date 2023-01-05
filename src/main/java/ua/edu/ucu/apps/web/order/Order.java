@@ -23,6 +23,7 @@ public class Order {
         this.payment = payment;
         this.delivery = delivery;
         beingProcessed = false;
+        this.items = new LinkedList<Item>();
     }
 
     public void setPaymentStrategy(Payment payment){
@@ -41,7 +42,7 @@ public class Order {
 
     public String ProcessOrder() {
         if (payment.pay(calculateTotalPrice())){
-            delivery.successfulDeliveryDescription(items);
+            //delivery.successfulDeliveryDescription(items);
             beingProcessed = true;
             return "Order has been successfully processed!";
         }
